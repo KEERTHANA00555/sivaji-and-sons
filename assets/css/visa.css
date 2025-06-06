@@ -1,0 +1,62 @@
+.visa-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.visa-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.visa-price {
+  font-weight: bold;
+  color: #28a745; /* Bootstrap green */
+  font-size: 18px;
+}
+.text-indigo{
+    color: rgb(52, 82, 114);
+}
+
+.country-box {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.country-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0); /* transparent initially */
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+.country-box:hover::before {
+  background: rgba(0, 0, 0, 0.5); /* darken image on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1); /* strong glow */
+}
+
+.country-box:hover .overlay {
+  opacity: 1;
+}

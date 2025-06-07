@@ -144,6 +144,25 @@ p:last-child {
   }
 }
 
+.user-icon{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.user-icon1{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.user-icon2{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.faq-image{
+  min-height: 800px;
+}
+
 img {
   max-width: 100%;
   height: auto;

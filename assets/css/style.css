@@ -1176,6 +1176,7 @@ blockquote .quote-icon {
 }
 
 .modal-content {
+  margin: 20px;
   border: 2px solid #dcbb87;
 }
 .modal-content .close {

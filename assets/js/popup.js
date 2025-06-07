@@ -1,18 +1,8 @@
-    const modal = document.getElementById('modal');
-    const openBtn = document.getElementById('openModal');
-    const closeBtn = document.getElementById('closeModal');
 
-    openBtn.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    });
+  function openTermsModal() {
+    document.getElementById("termsModal").style.display = "flex";
+  }
 
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-
-    window.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
+  function closeTermsModal() {
+    document.getElementById("termsModal").style.display = "none";
+  }
